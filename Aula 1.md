@@ -1,52 +1,58 @@
 ## 🎯 Conteúdos Abordados
 
 - Conceito e prática de **Commit**
-- Mapeamento e ideação com o **Miro**
-- Upload de arquivos no **GitHub**
-- Formatação e estilização de repositórios com **Markdown**
+- Mapeamento e ideação com a ferramenta **Miro**
+- **Criação de Repositórios** no GitHub
+- Criação e **formatação de arquivos `.md`** (Markdown)
 
 ---
 
 ## 📌 1. O que é Commit?
 
-O **commit** funciona como um "ponto de salvamento" (*checkpoint*) no histórico do seu projeto. Sempre que você realiza uma alteração relevante no código ou nos arquivos e faz um commit, você está registrando o estado exato do projeto naquele momento.
+O **commit** funciona como um "ponto de salvamento" (*checkpoint*) no histórico do seu projeto. Sempre que você faz uma alteração relevante no código ou na documentação e confirma o commit, você registra o estado exato do repositório naquele momento.
 
-* **Boas práticas de mensagens de commit:**
-  * Seja claro e direto.
-  * Use verbos no imperativo ou presente (ex: `Adiciona layout inicial`, `Corrige bug no login`).
-  * Mantenha um histórico legível para você e sua equipe.
+* **Boas práticas de commit:**
+  * Escrever mensagens claras e objetivas.
+  * Descrever o que foi alterado ou adicionado.
+  * Mantenha um histórico organizado.
 
 ---
 
-## 🎨 2. Uso da Ferramenta Miro
+## 🎨 2. Planejamento com o Miro
 
-O **Miro** é uma plataforma de lousa virtual colaborativa utilizada para planejar visualmente os projetos antes ou durante o desenvolvimento.
+O **Miro** é uma ferramenta de lousa virtual usada para planejar e estruturar ideias visualmente antes ou durante o desenvolvimento.
 
 ### Para que utilizamos:
-- Criar **fluxogramas** e diagramas de arquitetura.
-- Organizar ideias com **post-its digitais** e mapas mentais.
-- Fazer sessões de *brainstorming* em equipe.
-- Definir *wireframes* e telas iniciais do projeto.
+- Criar **fluxogramas** e mapas mentais.
+- Organizar tarefas e ideias com post-its virtuais.
+- Fazer *brainstorming* em equipe.
+- Esboçar estruturas e telas do projeto.
 
 ---
 
-## 📤 3. Upload de Arquivos no GitHub
+## 📁 3. Criação de Repositórios no GitHub
 
-Na aula, aprendemos como enviar arquivos para a nuvem através do GitHub, garantindo backup e versionamento do projeto.
+Aprendemos o passo a passo para inicializar um novo projeto diretamente na plataforma do GitHub:
 
-### Formas de envio:
-1. **Via Interface Web:**
-   - Navegue até o repositório.
-   - Clique em `Add file` > `Upload files`.
-   - Arraste os arquivos, escreva a mensagem de commit e confirme.
+1. Acessar o perfil no GitHub e ir na aba **Repositories**.
+2. Clicar no botão **New**.
+3. Definir o nome do repositório e uma breve descrição.
+4. Escolher a visibilidade (Público ou Privado).
+5. Inicializar o repositório (incluindo ou não o arquivo `README.md`).
 
-2. **Via Terminal / Linha de Comando (Git):**
-   ```bash
-   # Adiciona os arquivos para a área de preparação (staging)
-   git add .
+---
 
-   # Cria o registro das alterações com uma mensagem
-   git commit -m "feat: adiciona arquivos da aula de hoje"
+## 📝 4. Criação e Formatação de Arquivos `.md`
 
-   # Envia as alterações para o repositório remoto
-   git push origin main
+Aprendemos a criar e estruturar arquivos Markdown (`.md`) para documentar os projetos de forma visual e organizada.
+
+### Principais formatações que aprendemos:
+
+| Elemento | Sintaxe Markdown | Resultado |
+| :--- | :--- | :--- |
+| **Título** | `# Título` | Título Principal |
+| **Subtítulo** | `## Subtítulo` | Subtítulo |
+| **Negrito** | `**texto**` | **texto** |
+| **Itálico** | `*texto*` | *texto* |
+| **Lista** | `- item` | • item |
+| **Código** | `` `código` `` | `código` |
