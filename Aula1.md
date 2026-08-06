@@ -59,62 +59,17 @@ Aprendemos a criar e estruturar arquivos Markdown (`.md`) para documentar os pro
 
 ---
 
-```mermaid
-flowchart TB
-    %% --- ESTILOS ---
-    classDef rosa fill:#fed7d7,stroke:#feb2b2,color:#1a202c;
-    classDef azulClaro fill:#ebf8ff,stroke:#bee3f8,color:#1a202c;
-    classDef azul fill:#dbeafe,stroke:#93c5fd,color:#1a202c;
-    classDef verdeClaro fill:#f0fdf4,stroke:#bbf7d0,color:#1a202c;
-    classDef verde fill:#d1fae5,stroke:#6ee7b7,color:#1a202c;
-    classDef roxo fill:#e0e7ff,stroke:#c7d2fe,color:#1a202c;
-    classDef cinza fill:#f3f4f6,stroke:#d1d5db,color:#1a202c;
-    classDef laranja fill:#ffedd5,stroke:#fed7aa,color:#1a202c;
+# 🖥️ Evolução dos Sistemas Operacionais
 
-    %% --- CARDS SUPERIORES (PARTE DE CIMA) ---
-    MULTICS["<b>🔴 Multics</b><br>• Projeto MIT, AT&T e GE.<br>• Multiusuário e multitarefa."] :::rosa
-    UNIX_C["<b>🔵 Unix em C</b><br>• Reescrito em C.<br>• Ganhou portabilidade."] :::azulClaro
-    MSDOS["<b>💾 PC e MS-DOS</b><br>• Lançamento IBM PC.<br>• Sistema de linha de comando."] :::roxo
-    WIN1["<b>🪟 Windows</b><br>• Interface gráfica sobre o DOS.<br>• Uso de janelas e mouse."] :::azul
-    GNU_HURD["<b>🟢 GNU Hurd</b><br>• Microkernel para o GNU.<br>• Alternativa ao kernel."] :::verdeClaro
-    WIN_NT["<b>🪟 Windows NT</b><br>• Arquitetura 32-bits.<br>• Suporte a redes."] :::rosa
-    REACTOS["<b>💿 ReactOS</b><br>• SO livre compatível com NT.<br>• Projeto open-source."] :::azulClaro
-    MAC_INTEL["<b>🍏 Mac OS (Intel)</b><br>• Migração para chips Intel.<br>• Kernel Darwin/Unix."] :::azul
-
-    %% --- LINHA CENTRAL DE ANOS ---
-    subgraph EIXO[" ─────────────── LINHA DO TEMPO ─────────────── "]
-        direction LR
-        E65((1965)) --- E69((1969)) --- E72((1972)) --- E78((1978)) --- E81((1981)) --- E84((1984)) --- E85((1985)) --- E87((1987)) --- E90((1990)) --- E91((1991)) --- E93((1993)) --- E94((1994)) --- E96((1996)) --- E01((2001)) --- E05((2005)) --- E08((2008))
-    end
-
-    %% --- CARDS INFERIORES (PARTE DE BAIXO) ---
-    UNIX["<b>🐧 Unix</b><br>• Criado por Thompson e Ritchie.<br>• Base da computação."] :::azulClaro
-    APPLE2["<b>🍏 Apple II</b><br>• Popularizou computadores pessoais.<br>• Padronizou BASIC."] :::verde
-    MAC_OS["<b>🖥️ Mac OS</b><br>• Interface gráfica popular.<br>• Foco em usabilidade."] :::azul
-    GNU["<b>🦬 Projeto GNU</b><br>• Sistema totalmente livre.<br>• Utilitários cruciais."] :::laranja
-    MINIX["<b>🦝 Minix</b><br>• Criado por Tanenbaum.<br>• Unix-like educacional."] :::cinza
-    LINUX["<b>🐧 Linux</b><br>• Criado por Linus Torvalds.<br>• Kernel open-source."] :::laranja
-    POWERPC["<b>⚡ Mac PowerPC</b><br>• Transição de arquitetura.<br>• Processadores RISC."] :::laranja
-    WINXP["<b>🪟 Windows XP</b><br>• Unificou linhas NT/9x.<br>• Alta estabilidade."] :::verdeClaro
-    ANDROID["<b>🤖 Android</b><br>• SO móvel baseado em Linux.<br>• Domínio em smartphones."] :::verde
-
-    %% --- CONEXÕES VERTICAIS (CIMA -> EIXO) ---
-    MULTICS --- E65
-    UNIX_C --- E72
-    MSDOS --- E81
-    WIN1 --- E85
-    GNU_HURD --- E90
-    WIN_NT --- E93
-    REACTOS --- E96
-    MAC_INTEL --- E05
-
-    %% --- CONEXÕES VERTICAIS (EIXO -> BAIXO) ---
-    E69 --- UNIX
-    E78 --- APPLE2
-    E84 --- MAC_OS
-    MAC_OS --- GNU
-    E87 --- MINIX
-    E91 --- LINUX
-    E94 --- POWERPC
-    E01 --- WINXP
-    E08 --- ANDROID
+| Ano | Sistema Operacional | Imagem / Logo | Principais Características |
+| :---: | :--- | :---: | :--- |
+| **1965** | **Multics** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="40"/> | • Desenvolvido por MIT, AT&T e GE<br>• Sistema multiusuário e multitarefa pioneiro |
+| **1969** | **Unix** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg" width="40"/> | • Criado por Ken Thompson e Dennis Ritchie<br>• Base para a maioria dos SOs modernos |
+| **1972** | **Unix (em C)** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40"/> | • Reescrito em linguagem C<br>• Ganhou portabilidade para múltiplos hardwares |
+| **1981** | **MS-DOS** | <img src="https://img.shields.io/badge/MS--DOS-000000?style=for-the-badge&logo=dos&logoColor=white" height="28"/> | • Lançado junto com o IBM PC<br>• Sistema operacional em linha de comando |
+| **1984** | **Mac OS (System 1)** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="40"/> | • Popularizou a Interface Gráfica (GUI)<br>• Introduziu o uso massivo do mouse |
+| **1985** | **Windows 1.0** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="40"/> | • Primeira interface gráfica da Microsoft<br>• Funcionava como uma camada sobre o MS-DOS |
+| **1991** | **Linux Kernel** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="40"/> | • Criado por Linus Torvalds<br>• Kernel de código aberto (Open Source) |
+| **1993** | **Windows NT** | <img src="https://img.shields.io/badge/Windows_NT-0078D6?style=for-the-badge&logo=windows&logoColor=white" height="28"/> | • Arquitetura 32-bits voltada a corporações<br>• Base dos Windows modernos (XP, 10, 11) |
+| **2001** | **Mac OS X** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="40"/> | • Reconstrução baseada em Unix (BSD/Darwin)<br>• Unificou estabilidade e interface Aqua |
+| **2008** | **Android** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="40"/> | • Sistema operacional móvel baseado em Linux<br>• Sistema mais utilizado em smartphones |
