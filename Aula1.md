@@ -59,24 +59,17 @@ Aprendemos a criar e estruturar arquivos Markdown (`.md`) para documentar os pro
 
 ---
 
-```mermaid
-graph LR
-    MULTICS["Multics (1965)<br>• MIT, AT&T e GE<br>• Multiusuário e multitarefa"]
-    UNIX["Unix (1969)<br>• Thompson e Ritchie<br>• Base da computação"]
-    UNIX_C["Unix em C (1972)<br>• Reescrito em C<br>• Ganhou portabilidade"]
-    APPLE2["Apple II (1978)<br>• Popularizou PCs<br>• Padronizou BASIC"]
-    MSDOS["MS-DOS (1981)<br>• Lançado com IBM PC<br>• Sistema em linha de comando"]
-    MAC_OS["Mac OS (1984)<br>• Interface Gráfica (GUI)<br>• Uso do Mouse"]
-    WIN1["Windows 1.0 (1985)<br>• Interface sobre o DOS<br>• Janelas e ícones"]
-    MINIX["Minix (1987)<br>• Andrew Tanenbaum<br>• Unix educacional"]
-    GNU_HURD["GNU Hurd (1990)<br>• Projeto GNU<br>• Conceito de Microkernel"]
-    LINUX["Linux (1991)<br>• Linus Torvalds<br>• Kernel Open Source"]
-    WIN_NT["Windows NT (1993)<br>• Arquitetura 32-bits<br>• Foco corporativo e redes"]
-    POWERPC["Mac PowerPC (1994)<br>• Mudança de arquitetura<br>• Processadores RISC"]
-    REACTOS["ReactOS (1996)<br>• SO Open Source<br>• Compatível com Windows"]
-    WINXP["Windows XP (2001)<br>• Unificou NT e 9x<br>• Alta estabilidade"]
-    MAC_INTEL["Mac OS Intel (2005)<br>• Transição para Intel<br>• Kernel Darwin"]
-    ANDROID["Android (2008)<br>• SO Móvel Linux<br>• Líder em Smartphones"]
+# 🖥️ Evolução dos Sistemas Operacionais
 
-    %% Linha do Tempo Central
-    MULTICS --- UNIX --- UNIX_C --- APPLE2 --- MSDOS --- MAC_OS --- WIN1 --- MINIX --- GNU_HURD --- LINUX --- WIN_NT --- POWERPC --- REACTOS --- WINXP --- MAC_INTEL --- ANDROID
+| Ano | Sistema Operacional | Imagem / Logo | Principais Características |
+| :---: | :--- | :---: | :--- |
+| **1965** | **Multics** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="40"/> | • Desenvolvido por MIT, AT&T e GE<br>• Sistema multiusuário e multitarefa pioneiro |
+| **1969** | **Unix** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg" width="40"/> | • Criado por Ken Thompson e Dennis Ritchie<br>• Base para a maioria dos SOs modernos |
+| **1972** | **Unix (em C)** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40"/> | • Reescrito em linguagem C<br>• Ganhou portabilidade para múltiplos hardwares |
+| **1981** | **MS-DOS** | <img src="https://img.shields.io/badge/MS--DOS-000000?style=for-the-badge&logo=dos&logoColor=white" height="28"/> | • Lançado junto com o IBM PC<br>• Sistema operacional em linha de comando |
+| **1984** | **Mac OS (System 1)** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="40"/> | • Popularizou a Interface Gráfica (GUI)<br>• Introduziu o uso massivo do mouse |
+| **1985** | **Windows 1.0** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="40"/> | • Primeira interface gráfica da Microsoft<br>• Funcionava como uma camada sobre o MS-DOS |
+| **1991** | **Linux Kernel** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="40"/> | • Criado por Linus Torvalds<br>• Kernel de código aberto (Open Source) |
+| **1993** | **Windows NT** | <img src="https://img.shields.io/badge/Windows_NT-0078D6?style=for-the-badge&logo=windows&logoColor=white" height="28"/> | • Arquitetura 32-bits voltada a corporações<br>• Base dos Windows modernos (XP, 10, 11) |
+| **2001** | **Mac OS X** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="40"/> | • Reconstrução baseada em Unix (BSD/Darwin)<br>• Unificou estabilidade e interface Aqua |
+| **2008** | **Android** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="40"/> | • Sistema operacional móvel baseado em Linux<br>• Sistema mais utilizado em smartphones |
