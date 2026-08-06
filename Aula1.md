@@ -59,8 +59,8 @@ Aprendemos a criar e estruturar arquivos Markdown (`.md`) para documentar os pro
 
 ---
 
-graph LR
-    %% Configuração de Estilos e Cores (baseados na imagem)
+flowchart TB
+    %% --- ESTILOS ---
     classDef eixo fill:#2d3748,stroke:#1a202c,color:#fff,font-weight:bold;
     classDef rosa fill:#fed7d7,stroke:#feb2b2,color:#1a202c;
     classDef azulClaro fill:#ebf8ff,stroke:#bee3f8,color:#1a202c;
@@ -71,20 +71,48 @@ graph LR
     classDef cinza fill:#f3f4f6,stroke:#d1d5db,color:#1a202c;
     classDef laranja fill:#ffedd5,stroke:#fed7aa,color:#1a202c;
 
-    %% --- EIXO CENTRAL DE ANOS ---
-    E65((1965)) :::eixo --- E69((1969)) :::eixo --- E72((1972)) :::eixo --- E78((1978)) :::eixo --- E81((1981)) :::eixo --- E84((1984)) :::eixo --- E85((1985)) :::eixo --- E87((1987)) :::eixo --- E90((1990)) :::eixo --- E91((1991)) :::eixo --- E93((1993)) :::eixo --- E94((1994)) :::eixo --- E96((1996)) :::eixo --- E01((2001)) :::eixo --- E05((2005)) :::eixo --- E08((2008)) :::eixo
+    %% --- EIXO HORIZONTAL DE ANOS ---
+    subgraph EIXO[" "]
+        direction LR
+        E65((1965)) :::eixo --- E69((1969)) :::eixo
+        E69 --- E72((1972)) :::eixo
+        E72 --- E78((1978)) :::eixo
+        E78 --- E81((1981)) :::eixo
+        E81 --- E84((1984)) :::eixo
+        E84 --- E85((1985)) :::eixo
+        E85 --- E87((1987)) :::eixo
+        E87 --- E90((1990)) :::eixo
+        E90 --- E91((1991)) :::eixo
+        E91 --- E93((1993)) :::eixo
+        E93 --- E94((1994)) :::eixo
+        E94 --- E96((1996)) :::eixo
+        E96 --- E01((2001)) :::eixo
+        E01 --- E05((2005)) :::eixo
+        E05 --- E08((2008)) :::eixo
+    end
 
-    %% --- CARDS SUPERIORES (CIMA) ---
-    MULTICS["<b>Multics</b><br>• Projeto desenvolvido por MIT, AT&T e GE.<br>• Sistema multiusuário, multitarefa.<br>• Muito avançado e complexo.<br>• Influenciou diretamente o Unix."] :::rosa
-    UNIX_C["<b>Unix em C</b><br>• Reescrito em linguagem C.<br>• Aumento da portabilidade e popularização.<br>• Tornou-se referência para sistemas operacionais."] :::azulClaro
-    MSDOS["<b>PC e MS-DOS</b><br>• IBM lança PC.<br>• Microsoft fornece o MS-DOS.<br>• Sistema simples, monousuário e monotarefa.<br>• Grande impacto nos PCs."] :::roxo
-    WIN1["<b>Windows</b><br>• Interface gráfica sobre o MS-DOS.<br>• Introdução de janelas e uso do mouse.<br>• Popularização da interface gráfica em PCs."] :::azul
-    GNU_HURD["<b>GNU Hurd</b><br>• Desenvolvimento de microkernel para o projeto GNU.<br>• Alternativa ao kernel tradicional."] :::verdeClaro
-    WIN_NT["<b>Windows NT</b><br>• Arquitetura independente do MS-DOS.<br>• Suporte a redes e múltiplos usuários.<br>• Introdução do sistema NTFS."] :::rosa
-    REACTOS["<b>ReactOS</b><br>• Sistema livre compatível com Windows NT.<br>• Projeto open-source ainda em desenvolvimento."] :::azulClaro
-    MAC_INTEL["<b>Mac OS (Intel)</b><br>• Mac migra para processadores Intel.<br>• Uso de kernel Darwin V/Unix-like."] :::azul
+    %% --- CARDS SUPERIORES ---
+    MULTICS["<b>Multics</b><br>• Desenvolvido por MIT, AT&T e GE.<br>• Sistema multiusuário/multitarefa."] :::rosa
+    UNIX_C["<b>Unix em C</b><br>• Reescrito em C.<br>• Aumento da portabilidade."] :::azulClaro
+    MSDOS["<b>PC e MS-DOS</b><br>• IBM lança PC.<br>• Microsoft fornece o MS-DOS."] :::roxo
+    WIN1["<b>Windows</b><br>• GUI sobre MS-DOS.<br>• Introdução do mouse."] :::azul
+    GNU_HURD["<b>GNU Hurd</b><br>• Microkernel para o GNU.<br>• Alternativa ao kernel."] :::verdeClaro
+    WIN_NT["<b>Windows NT</b><br>• Arquitetura 32-bits.<br>• Suporte a redes."] :::rosa
+    REACTOS["<b>ReactOS</b><br>• SO livre compatível com NT.<br>• Projeto open-source."] :::azulClaro
+    MAC_INTEL["<b>Mac OS (Intel)</b><br>• Migração para chips Intel.<br>• Kernel Darwin."] :::azul
 
-    %% Conexões Cima -> Eixo
+    %% --- CARDS INFERIORES ---
+    UNIX["<b>Unix</b><br>• Criado por Thompson e Ritchie.<br>• Base da computação."] :::azulClaro
+    APPLE2["<b>Apple II</b><br>• Popularizou computadores pessoais.<br>• Padronizou BASIC."] :::verde
+    MAC_OS["<b>Mac OS</b><br>• Interface gráfica popular.<br>• Foco em usabilidade."] :::azul
+    GNU["<b>Projeto GNU</b><br>• Sistema totalmente livre.<br>• Utilitários cruciais."] :::laranja
+    MINIX["<b>Minix</b><br>• Criado por Tanenbaum.<br>• Unix-like educacional."] :::cinza
+    LINUX["<b>Linux</b><br>• Criado por Linus Torvalds.<br>• Kernel open-source."] :::laranja
+    POWERPC["<b>Mac PowerPC</b><br>• Transição de arquitetura.<br>• Portabilidade de SO."] :::laranja
+    WINXP["<b>Windows XP</b><br>• Unificou linhas NT/9x.<br>• Alta estabilidade."] :::verdeClaro
+    ANDROID["<b>Android</b><br>• SO móvel baseado em Linux.<br>• Domínio nos smartphones."] :::verde
+
+    %% --- LIGAÇÕES VERTICAIS ---
     MULTICS --- E65
     UNIX_C --- E72
     MSDOS --- E81
@@ -94,18 +122,6 @@ graph LR
     REACTOS --- E96
     MAC_INTEL --- E05
 
-    %% --- CARDS INFERIORES (BAIXO) ---
-    UNIX["<b>Unix</b><br>• Criado por Ken Thompson e Dennis Ritchie.<br>• Base para múltiplos sistemas operacionais.<br>• Base para diversos sistemas operacionais modernos."] :::azulClaro
-    APPLE2["<b>Apple II</b><br>• Popularização dos computadores pessoais.<br>• Padronizou BASIC e permitiu armazenamento em fitas e disquetes."] :::verde
-    MAC_OS["<b>Mac OS</b><br>• Interface gráfica baseada em mouse.<br>• Boa usabilidade no desktop.<br>• Tornou computadores mais acessíveis visualmente."] :::azul
-    GNU["<b>Projeto GNU</b><br>• Iniciado para criar um sistema totalmente livre.<br>• Desenvolveu utilitários cruciais."] :::laranja
-    MINIX["<b>Minix</b><br>• Criado por Andrew Tanenbaum.<br>• Sistema Unix-like educacional.<br>• Microkernel leve e limpo."] :::cinza
-    LINUX["<b>Linux</b><br>• Criado por Linus Torvalds.<br>• Kernel tipo Unix escrito em C.<br>• Amplamente adotado em servidores e supercomputadores."] :::laranja
-    POWERPC["<b>Mac PowerPC</b><br>• Mac passa a usar arquitetura PowerPC.<br>• Portabilidade de novos tipos de sistemas."] :::laranja
-    WINXP["<b>Windows XP</b><br>• Unificou linhas corporativas e de consumo.<br>• Alta compatibilidade e popularidade."] :::verdeClaro
-    ANDROID["<b>Android</b><br>• Sistema operacional móvel baseado em Linux.<br>• Domínio do mercado de smartphones."] :::verde
-
-    %% Conexões Eixo -> Baixo
     E69 --- UNIX
     E78 --- APPLE2
     E84 --- MAC_OS
